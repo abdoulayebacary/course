@@ -8,7 +8,7 @@ final Function addproduct;
           color: Theme.of(context).primaryColor,
           child: Text('Ajouter le produit'),
           onPressed: () {
-           addproduct('Sweet');
+           addproduct({'title':'Cholocat', 'image':'assets/food.jpg'});
           },
         );
   }
