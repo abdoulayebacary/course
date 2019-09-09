@@ -16,21 +16,26 @@ class Products extends StatelessWidget {
     );
   }
 
-  @override
-  Widget build(BuildContext context) {
-    Widget productCard;
+  Widget _buildProducsList() {
+    Widget productCards;
 
     if (products.length > 0) {
-      productCard = ListView.builder(
+      productCards = ListView.builder(
         itemBuilder: _buildProductItem,
         itemCount: products.length,
       );
     } else {
-      productCard = Center(
+      productCards = Center(
         child: Text('Pas de produits, SVP ajouter en quelque'),
       );
     }
 
-    return productCard;
+    return productCards;
+  }
+
+// function Principal
+  @override
+  Widget build(BuildContext context) {
+    return _buildProducsList();
   }
 }
