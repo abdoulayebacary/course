@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.green,
         brightness: Brightness.light,
         accentColor: Colors.deepPurple
       ),
@@ -18,7 +18,6 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           centerTitle: true,
           title: Text('Ma Liste'),
-          
           // backgroundColor: Colors.red,
         ),
         body: ProductManager('Test Food'),
