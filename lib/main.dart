@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
           title: Text('Ma Liste'),
           // backgroundColor: Colors.red,
         ),
-        body: ProductManager('Test Food'),
+        body: ProductManager(),
       ),
     );
   }
