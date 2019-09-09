@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import './product_manager.dart';
+import './pages/home.dart';
 
 // import './products.dart';
 void main() => runApp(MyApp());
@@ -14,14 +14,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         accentColor: Colors.deepPurple
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          centerTitle: true,
-          title: Text('Ma Liste'),
-          // backgroundColor: Colors.red,
-        ),
-        body: ProductManager(),
-      ),
+      home: HomePage()
     );
   }
 }
